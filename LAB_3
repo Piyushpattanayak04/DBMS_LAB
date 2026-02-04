@@ -58,7 +58,7 @@ SELECT ENAME FROM EMPLOYEE WHERE DEPTNO IN (10,20,40) OR JOB IN ('CLERK','ANALYS
 /*
 Display employee number and names for employees who earn commission
 */
-SELECT EMPNO,ENAME FROM EMPLOYEE WHERE COMM IS NOT NULL;
+SELECT EMPNO,ENAME FROM EMPLOYEE WHERE COMM IS NOT NULL AND COMM>0;
 
 /*
 Display employee number and total salary for each employee
